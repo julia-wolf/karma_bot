@@ -6,7 +6,6 @@ class KarmaBot < SlackRubyBot::Bot
     client.say(text: 'pong', channel: data.channel)
   end
 
-
   command /^<@[A-Z0-9]{9}> [-+]{2}$/ do |client, data, match|
     binding.pry
     client.say(text: 'hi', channel: data.channel)
